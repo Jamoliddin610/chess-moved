@@ -1,0 +1,107 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle, #ece3b9, #d8c181, #c68e60, #b67a2e, #a65400);
+    font-family: 'Akshar', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+   align-items: center;
+    justify-content: center;
+    position: relative;
+    perspective: 1000px;
+    .board{
+        display: flex;
+        flex-wrap: wrap;
+        width: 648px;
+        height: 648px;
+        border: solid 10px #a65400;
+        background-color: #fff;
+        transform-style:preserve-3d ;
+        
+        .box{
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            border-bottom: solid 1px #c68e60;
+            border-left: solid 1px #c68e60;
+            background-position: center center;
+            background-size: 90% 90%;
+            background-repeat: no-repeat;
+
+
+        }
+    }
+}
+.result{
+    position: absolute;
+    top: 100px;
+    right: 150px;
+
+}
+.box-dark{
+    background-color: #000000 !important;
+}
+.green{
+    box-shadow: 0px 0px 30px 13px #03ff0c inset;
+}
+.danger{
+    // box-shadow: 0px 0px 30px 13px #ff2929 inset !important; 
+    box-shadow: 0px 0px 0px   #ffffff inset !important; 
+    background-color: transparent !important;
+
+}
+.btn-container{
+    position: absolute;
+        left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.btn{
+    width: 100px;
+    height: 100px;  
+    border-radius: 5px;
+    border: solid 5px #a65400;
+    background-color: #fff;
+
+    img{
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+    }
+}
+.result{
+    background-color: #fff;
+    width: 100px;
+    text-align: center;
+    border: solid 5px #a65400;
+    border-radius: 10px;
+    font-size: 18px;
+    .y-result{
+        border-top: solid 5px #a65400;
+        padding-top: 15px;
+    }
+
+
+}
+
+.threed-btn{
+    position: absolute;
+    top: 30px;
+    right: 175px;
+    padding: 10px 20px;
+    border: solid 3px #a65400;
+    border-radius: 5px;
+
+}
+.chess-3d{
+            transform: rotateX(60deg) scale(1.3) translateY(-50px);
+        }
+
+.castle{
+    background-image: url('./../../imgs/castle.png') !important;
+}        

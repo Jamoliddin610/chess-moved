@@ -5,13 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/SamCopeland/phpmeXx6V.png" type="image/x-icon">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/main.min.css">
   <title>Document</title>
 </head>
-
 <body>
 
+  <div class="container">
+    <button class="threed-btn">3D</button>
+    <div class="result">
+      <p class="x-result">X=0</p>
+      <p class="y-result">Y=0</p>
+    </div>
+    <div class="btn-container">
+      <button class="btn" id="castle"><img src="./imgs/castle.png" alt="castle"></button>
+      <button class="btn" id="knight"><img src="./imgs/knight.png" alt="knight"></button>
+      <button class="btn" id="bishop"><img src="./imgs/bishop.png" alt="bishop"></button>
+      <button class="btn" id="king"><img src="./imgs/king.png" alt="king"></button>
+      <button class="btn" id="queen" ><img src="./imgs/queen.png" alt="queen"></button>
+      <button class="btn" id="paw" onclick="pathfunc()"><img src="./imgs/paw.png" alt="paw"></button>
+
+
+    </div>
+    <div class="board">
+      </div>
+    </div>
+  </div>
   <script src="js/main.js"></script>
 </body>
 
